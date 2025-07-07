@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>VOCÊ É UM PIRATA</title>
+    <style>
+      body {
+        background-color: black;
+        color: #00ffff;
+        font-family: monospace;
+        text-align: center;
+        padding-top: 100px;
+        animation: glow 2s infinite alternate;
+      }
+      @keyframes glow {
+        from { text-shadow: 0 0 5px #00ffff; }
+        to { text-shadow: 0 0 20px #00ffff; }
+      }
+      #void {
+        margin-top: 50px;
+        padding: 10px 20px;
+        background: none;
+        border: 1px solid #00ffff;
+        color: #00ffff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      #void:hover {
+        background-color: #00ffff;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>⚠️ VOCÊ É UM PIRATA ⚠️</h1>
+    <p>Você não deveria estar aqui...</p>
+    <p>O fragmento foi corrompido. O Mimii está observando.</p>
+    <button id="void" onclick="goToVoid()">Back to the real deal</button>
+
+    <script>
+      function goToVoid() {
+        document.body.innerHTML = "<h1 style='color: red; margin-top:100px;'>O VAZIO ABSOLUTO TE ACEITOU.</h1>";
+        document.body.style.backgroundColor = "black";
+        // aqui poderia tocar um som se quiser depois
+      }
+    </script>
+  </body>
+</html>
